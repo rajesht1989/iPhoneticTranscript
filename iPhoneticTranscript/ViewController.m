@@ -72,7 +72,7 @@ typedef enum {
             break;
         case kSpeak : {
             AVSpeechSynthesizer *synthesizer = [[AVSpeechSynthesizer alloc]init];
-            AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:@"HI"];
+            AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:_textField.text];
             [synthesizer speakUtterance:utterance];
         }
             break;
