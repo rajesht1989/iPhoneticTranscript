@@ -105,9 +105,9 @@ typedef enum {
     
     [UIView animateWithDuration:.3 animations:^{
         if (shouldShow) {
-            [_resultView setAlpha:1.f];
+            [self.resultView setAlpha:1.f];
         } else {
-            [_resultView setAlpha:0.f];
+            [self.resultView setAlpha:0.f];
         }
         [self.view layoutIfNeeded];
         [self.accessoryView layoutIfNeeded];
